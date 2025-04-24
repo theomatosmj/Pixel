@@ -1,0 +1,233 @@
+
+@font-face {
+    font-family: raleway;
+    src: url(raleway.ttf);
+}
+
+.open-sans{
+    font-family: raleway;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
+
+* {
+    font-family: raleway;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 38px 100px;
+    background-color:#041748 ;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    
+    font-family: raleway;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a:hover{
+    color: rgb(207, 205, 234);
+    
+}
+
+.logo{
+    margin-left: -80px;
+    height: auto;
+    width: 6.25rem;
+    display: flex;
+
+    
+    & img{
+        height: auto;
+        width: 100%;
+    }
+
+}
+
+
+.slogan{
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 8rem;
+    margin-top: 17.5rem;
+    width: 31rem;
+    height: 20rem;
+    color: #03174A;
+}
+
+.slogan h2{
+  font-size: 50px;
+}
+
+.quadrado{
+    margin-right: -930px;
+    height: auto;
+    width: 500px;
+    margin-left: 41rem;
+    position: static;
+    margin-top: -18.5rem;
+}
+
+
+ 
+.carousel {
+    width:100%;
+    margin-top: -20rem;
+    height:300px;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+    }
+    
+    img{
+      width: 100%;
+    }
+    
+    .carousel-inner {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .carousel-open:checked + .carousel-item {
+      position: relative;
+      opacity: 100;
+    }
+    
+    .carousel-item {
+      position: absolute;
+      opacity: 0;
+      -webkit-transition: opacity 0.7s ease-out;
+      transition: opacity 0.7s ease-out;
+      padding-top: 390px;
+      
+    }
+    
+    .carousel-item img {
+      display: block;
+      max-width: 100%;
+    }
+    
+    .carousel-control {
+      background: rgba(255, 255, 255, 0.328);
+      border-radius: 50%;
+      color: #fff;
+      cursor: pointer;
+      display: none;
+      font-size: 40px;
+      height: 40px;
+      line-height: 35px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      cursor: pointer;
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      text-align: center;
+      width: 40px;
+      z-index: 10;
+      transition: 5s ;
+      
+      
+     
+      
+    
+    
+    }
+    
+    .carousel-control.prev {
+      left: 2%;
+      user-select: none;
+      margin-top: 200px;
+      opacity: 80px;
+    }
+    
+    .carousel-control.next {
+      right: 2%;
+      user-select: none;
+      margin-top: 200px;
+    }
+    
+    .carousel-control:hover {
+      background: rgba(60, 0, 225, 0.5);
+      color: white;
+    }
+    
+    #carousel-1:checked ~ .control-1,
+    #carousel-2:checked ~ .control-2,
+    #carousel-3:checked ~ .control-3 {
+      display: block;
+    }
+    
+    .carousel-indicators {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 2%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+    }
+    
+    .carousel-indicators li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    
+    .carousel-bullet {
+      color: #178de5;
+      cursor: pointer;
+      display: block;
+      font-size: 35px;
+      padding:0 10px;
+    }
+    
+    .carousel-bullet:hover {
+      color: gray;
+    }
+    
+    #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+    #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+    #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+      color: green;
+    }
+    
+    
+    .botao{
+      margin-left: 50%;
+      
+    }
+    
+    .Text{
+      color: #000000;
+    }
+    
